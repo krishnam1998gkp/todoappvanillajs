@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**********Todo Body************/
+
+.todoList{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.todoList .header{
+    color: #46b5d1;
+    margin: 1.2rem 0;
+    font-size: 2rem;
+}
+.todoList .add-todos{
+    display: flex;
+    flex-direction: column;
+}
+.add-todos input[type="text"],.addbtn{
+    margin: 0.6rem 0;
+}
+.add-todos input[type="text"]{
+    padding: 6px 1px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.8s;
+}
+.add-todos input[type="text"]:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #151965
+}
+
+.addbtn input[type="submit"]{
+    padding: 0.5rem 1.2rem;
+    background: #515585;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.addbtn input[type="submit"]:hover{
+    background: #151965;
+    cursor: pointer;
+}
+
+ul.todos{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 1rem;
+}
+.todo{
+    margin-top: 6px;
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 12px 0 12px 0;
+    cursor: pointer;
+}
+.todo li,span{
+    padding: 4px;
+}
+.todo .delbtn{
+    margin-left: auto;
+    background: #c72c41;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
